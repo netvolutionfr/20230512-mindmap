@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.4/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.14.4"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.4/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root, jsonOptions) => {
+        const markmap = getMarkmap();
+        window.mm = markmap.Markmap.create('svg#mindmap', (getOptions || markmap.deriveOptions)(jsonOptions), root);
+      })(() => window.markmap,null,{"type":"heading","depth":0,"payload":{"lines":[0,1]},"content":"Notions SIO","children":[{"type":"heading","depth":1,"payload":{"lines":[2,3]},"content":"Réseau","children":[{"type":"heading","depth":2,"payload":{"lines":[4,5]},"content":"Couches OSI"},{"type":"heading","depth":2,"payload":{"lines":[6,7]},"content":"WiFi","children":[{"type":"list_item","depth":3,"payload":{"lines":[7,8]},"content":"SSID"},{"type":"list_item","depth":3,"payload":{"lines":[8,9]},"content":"WEP (obsolète)"},{"type":"list_item","depth":3,"payload":{"lines":[9,10]},"content":"WPA, WPA2, WPA3"}]},{"type":"heading","depth":2,"payload":{"lines":[11,12]},"content":"IP","children":[{"type":"list_item","depth":3,"payload":{"lines":[12,13]},"content":"IP publique / privée"},{"type":"list_item","depth":3,"payload":{"lines":[13,14]},"content":"10.x.x.x, 172.x.x.x, 192.168.x"},{"type":"list_item","depth":3,"payload":{"lines":[14,15]},"content":"IPv6"}]},{"type":"heading","depth":2,"payload":{"lines":[16,17]},"content":"TCP / UDP","children":[{"type":"list_item","depth":3,"payload":{"lines":[17,18]},"content":"Port"}]},{"type":"heading","depth":2,"payload":{"lines":[19,20]},"content":"HTTP","children":[{"type":"list_item","depth":3,"payload":{"lines":[20,21]},"content":"HTTPS (TLS)"},{"type":"list_item","depth":3,"payload":{"lines":[21,22]},"content":"Port 80 ou 443"},{"type":"list_item","depth":3,"payload":{"lines":[22,23]},"content":"Méthodes GET, POST, PUT/PATCH, DELETE"},{"type":"list_item","depth":3,"payload":{"lines":[23,24]},"content":"API REST"},{"type":"list_item","depth":3,"payload":{"lines":[24,25]},"content":"Serveur web (Apache, Nginx)"}]}]},{"type":"heading","depth":1,"payload":{"lines":[26,27]},"content":"Dév FRONT","children":[{"type":"heading","depth":2,"payload":{"lines":[28,29]},"content":"Interfaces","children":[{"type":"list_item","depth":3,"payload":{"lines":[29,30]},"content":"Maquettes"},{"type":"list_item","depth":3,"payload":{"lines":[30,31]},"content":"UI / UX"},{"type":"list_item","depth":3,"payload":{"lines":[31,32]},"content":"Composants"},{"type":"list_item","depth":3,"payload":{"lines":[32,33]},"content":"Figma"}]},{"type":"heading","depth":2,"payload":{"lines":[34,35]},"content":"HTML/CSS/JavaScript","children":[{"type":"list_item","depth":3,"payload":{"lines":[35,36]},"content":"DOM"},{"type":"list_item","depth":3,"payload":{"lines":[36,37]},"content":"HTML5, balises"},{"type":"list_item","depth":3,"payload":{"lines":[37,38]},"content":"Formulaires HTML"},{"type":"list_item","depth":3,"payload":{"lines":[38,39]},"content":"Bootstrap"},{"type":"list_item","depth":3,"payload":{"lines":[39,40]},"content":"React / Angular"},{"type":"list_item","depth":3,"payload":{"lines":[40,41]},"content":"WordPress"}]},{"type":"heading","depth":2,"payload":{"lines":[42,43]},"content":"Desktop","children":[{"type":"list_item","depth":3,"payload":{"lines":[43,44]},"content":"C#"},{"type":"list_item","depth":3,"payload":{"lines":[44,45]},"content":"Java"},{"type":"list_item","depth":3,"payload":{"lines":[45,46]},"content":"XML"}]},{"type":"heading","depth":2,"payload":{"lines":[47,48]},"content":"Mobile","children":[{"type":"list_item","depth":3,"payload":{"lines":[48,49]},"content":"Android (Java, Kotlin)"},{"type":"list_item","depth":3,"payload":{"lines":[49,50]},"content":"XML"},{"type":"list_item","depth":3,"payload":{"lines":[50,51]},"content":"iOS (Swift)"},{"type":"list_item","depth":3,"payload":{"lines":[51,52]},"content":"Flutter"}]}]},{"type":"heading","depth":1,"payload":{"lines":[54,55]},"content":"Dév BACK","children":[{"type":"heading","depth":2,"payload":{"lines":[56,57]},"content":"PHP","children":[{"type":"list_item","depth":3,"payload":{"lines":[57,58]},"content":"PHP Objet"},{"type":"list_item","depth":3,"payload":{"lines":[58,59]},"content":"Frameworks : Symfony"},{"type":"list_item","depth":3,"payload":{"lines":[59,60]},"content":"WordPress"}]},{"type":"heading","depth":2,"payload":{"lines":[61,62]},"content":"Bases de données","children":[{"type":"list_item","depth":3,"payload":{"lines":[62,63]},"content":"MySQL"},{"type":"list_item","depth":3,"payload":{"lines":[63,64]},"content":"Conception de bases"},{"type":"list_item","depth":3,"payload":{"lines":[64,65]},"content":"Clés primaires, étrangères, liaisons"},{"type":"list_item","depth":3,"payload":{"lines":[65,66]},"content":"Requêtes (SELECT, INSERT, UPDATE, DELETE)"},{"type":"list_item","depth":3,"payload":{"lines":[66,67]},"content":"NoSQL..."}]},{"type":"heading","depth":2,"payload":{"lines":[68,69]},"content":"API","children":[{"type":"list_item","depth":3,"payload":{"lines":[69,70]},"content":"JSON"},{"type":"list_item","depth":3,"payload":{"lines":[70,71]},"content":"Authentification"},{"type":"list_item","depth":3,"payload":{"lines":[71,72]},"content":"REST"}]}]},{"type":"heading","depth":1,"payload":{"lines":[73,74]},"content":"Cybersécurité","children":[{"type":"heading","depth":2,"payload":{"lines":[75,76]},"content":"RGPD"},{"type":"heading","depth":2,"payload":{"lines":[77,78]},"content":"Analyse de risque"},{"type":"heading","depth":2,"payload":{"lines":[79,80]},"content":"DICP"},{"type":"heading","depth":2,"payload":{"lines":[81,82]},"content":"Crypto","children":[{"type":"list_item","depth":3,"payload":{"lines":[82,83]},"content":"Chiffrement symétrique, asymétriques"},{"type":"list_item","depth":3,"payload":{"lines":[83,84]},"content":"Clés"},{"type":"list_item","depth":3,"payload":{"lines":[84,85]},"content":"Hachage"},{"type":"list_item","depth":3,"payload":{"lines":[85,86]},"content":"Signatures"}]},{"type":"heading","depth":2,"payload":{"lines":[87,88]},"content":"OWASP","children":[{"type":"list_item","depth":3,"payload":{"lines":[88,89]},"content":"Injections"},{"type":"list_item","depth":3,"payload":{"lines":[89,90]},"content":"Failles Web"}]}]}]},{})</script>
+</body>
+</html>
